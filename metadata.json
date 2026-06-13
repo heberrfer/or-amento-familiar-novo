@@ -1,0 +1,6 @@
+{
+  "name": "Controle de Orçamento Familiar",
+  "description": "Planeje e controle seus ganhos, gastos, limite de orçamento e visualize relatórios de maneira fácil e interativa.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
