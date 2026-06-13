@@ -28,3 +28,15 @@ export interface CategoryConfig {
   type: 'income' | 'expense' | 'both';
   iconName: string; // Used to reference Lucide icons
 }
+
+export interface Appointment {
+  id: string;
+  title: string;
+  date: string; // YYYY-MM-DD
+  time: string; // HH:MM
+  category: 'finance' | 'personal' | 'health' | 'work' | 'other';
+  notes?: string;
+  important: boolean;
+  completed: boolean;
+}
+

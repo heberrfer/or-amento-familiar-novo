@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import { CategoryConfig, Transaction, CategoryBudget } from './types';
+import { CategoryConfig, Transaction, CategoryBudget, Appointment } from './types';
 
 export const CATEGORIES: CategoryConfig[] = [
   // Receitas (Income)
@@ -282,3 +282,87 @@ export const INITIAL_TRANSACTIONS: Transaction[] = [
     notes: 'UberX de fim de semana'
   }
 ];
+
+export const INITIAL_APPOINTMENTS: Appointment[] = [
+  {
+    id: 'app-1',
+    title: 'Pagamento do Aluguel',
+    date: '2026-06-05',
+    time: '10:00',
+    category: 'finance',
+    notes: 'Realizar Pix do aluguel familiar e condomínio',
+    important: true,
+    completed: true
+  },
+  {
+    id: 'app-2',
+    title: 'Renovação Netflix & Spotify',
+    date: '2026-06-05',
+    time: '08:00',
+    category: 'finance',
+    notes: 'Débito automático no cartão de crédito',
+    important: false,
+    completed: true
+  },
+  {
+    id: 'app-3',
+    title: 'Jantar de Casal - Aniversário',
+    date: '2026-06-08',
+    time: '20:00',
+    category: 'personal',
+    notes: 'Reserva na Pizzaria Di Bari (Comemoração especial)',
+    important: true,
+    completed: true
+  },
+  {
+    id: 'app-4',
+    title: 'Consulta Dentista Roberto',
+    date: '2026-06-09',
+    time: '14:30',
+    category: 'health',
+    notes: 'Checkup semestral e limpeza de rotina',
+    important: false,
+    completed: true
+  },
+  {
+    id: 'app-5',
+    title: 'Vencimento Conta de Luz (Enel)',
+    date: '2026-06-10',
+    time: '12:00',
+    category: 'finance',
+    notes: 'Pagar boleto gerado no início do mês',
+    important: true,
+    completed: true
+  },
+  {
+    id: 'app-6',
+    title: 'Almoço em Família (Churrasco)',
+    date: '2026-06-14',
+    time: '12:30',
+    category: 'personal',
+    notes: 'Reunir pais e irmãos na nossa casa',
+    important: true,
+    completed: false
+  },
+  {
+    id: 'app-7',
+    title: 'Reunião de Condomínio',
+    date: '2026-06-18',
+    time: '19:30',
+    category: 'work',
+    notes: 'Discussão sobre reforma da fachada principal',
+    important: false,
+    completed: false
+  },
+  {
+    id: 'app-8',
+    title: 'Vacinação Gripe das Crianças',
+    date: '2026-06-22',
+    time: '09:00',
+    category: 'health',
+    notes: 'Levar as cadernetas no posto de saúde público',
+    important: true,
+    completed: false
+  }
+];
+
